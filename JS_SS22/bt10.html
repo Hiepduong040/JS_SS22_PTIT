@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // falsy gồm có tất cả 5 trường hợp
+      //     1 . string
+      //     2 . 3 gia tri bang0 ( 0 , -0 , BigInt- ít sử dụng)
+      //     3.null
+      //     4.underfinded
+      //     5.NaN
+      //     6.document.all
+      // truthy là những giá tri:
+      //     1.true: Giá trị boolean đúng.
+      //     2. Số khác 0: Bất kỳ giá trị số nào khác 0 (bao gồm số âm và số thập phân) đều được xem là truthy.
+      //     3.Chuỗi không rỗng: Bất kỳ chuỗi nào có ít nhất một ký tự đều được xem là truthy, bao gồm các chuỗi có ký tự trắng.
+      //     4.Mảng và đối tượng: Các mảng và đối tượng (bao gồm các đối tượng rỗng) đều được xem là truthy.
+
+      //     vd:
+      //   let userName = prompt("Nhập tên đăng nhập:");
+      //   if (userName) {
+      //     console.log("Hello " + username + " world!");
+      //   } else {
+      //     console.log("Vui lòng nhập tên đăng nhập!");
+      //   }
+      //   nếu userNam tồn tại thì sẽ được hiểu là truthy và chương trình tự hiểu đúng và chạy
+      //  đoạn lệnh if còn nếu tệp ko tồn tại sẽ là sai và chạy lệnh Vui lòng nhập tên đăng nhập ra mh.
+    </script>
+  </body>
+</html>

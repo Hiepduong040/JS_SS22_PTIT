@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var year = prompt("Vui lòng nhập vào số năm");
+      var month = prompt("Vui lòng nhập vào tháng trong năm");
+      switch (month) {
+        case ("1", "3", "5", "7", "8", "10", "12"):
+          console.log("Tháng này có 31 ngày");
+          break;
+        case ("4", "6", "9", "11"):
+          console.log("Tháng này có 30 ngày");
+        case "2":
+          if (year % 4 == 0 && year % 100 != 0) {
+            console.log("Tháng này có 29 ngày");
+          } else {
+            console.log("Tháng này có 28 ngày");
+          }
+          break;
+        default:
+          console.log("Số tháng không hợp lệ!!!");
+      }
+    </script>
+  </body>
+</html>

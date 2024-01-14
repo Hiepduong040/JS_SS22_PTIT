@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("Mời nhập số 4 chữ số");
+      if (a > 999 && a < 10000) {
+        d = Math.floor(a / 1000);
+        document.write("Chữ số hàng nghìn = " + d);
+        document.write("<br>");
+        c = Math.floor((a % 1000) / 100);
+        document.write("Chữ số hàng trăm = " + c);
+        document.write("<br>");
+        b = Math.floor((a % 100) / 10);
+        document.write("Chữ số hàng chục = " + b);
+        document.write("<br>");
+        u = a % 10;
+        document.write("Chữ số hàng đơn vị = " + u);
+        document.write("<br>");
+      } else {
+        document.write("Không hợp lệ");
+      }
+    </script>
+  </body>
+</html>

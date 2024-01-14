@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = +prompt("Nhập a");
+      var b = +prompt("Nhập b");
+      var c = +prompt("Nhập c");
+      if (a === 0) {
+        var x = -c / b;
+        console.log("Phương trình có nghiệm là x = ", x);
+      } else {
+        var delta = b * b - 4 * a * c;
+        if (delta >= 0) {
+          var x1 = ((-b + Math.sqrt(delta)) / 2) * a;
+          var x2 = ((-b - Math.sqrt(delta)) / 2) * a;
+          console.log("Phương trình có 2 nghiệm là : x1 = ", x1, "x2 = ", x2);
+        } else {
+          console.log("Phương trình vô nghiệm");
+        }
+      }
+    </script>
+  </body>
+</html>

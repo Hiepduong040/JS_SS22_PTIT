@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = +prompt("Nhập số thứ nhất: ");
+      var b = +prompt("Nhập số thứ hi: ");
+      var caculation = prompt("Nhập vào phép tính:");
+      switch (caculation) {
+        case "+":
+          var result = a + b;
+          console.log("kết quả của phép tính là: ", result);
+          break;
+        case "-":
+          var result = a - b;
+          console.log("kết quả của phép tính là: ", result);
+          break;
+        case "*":
+          var result = a * b;
+          console.log("kết quả của phép tính là: ", result);
+          break;
+        case "/":
+          var result = a / b;
+          console.log("kết quả của phép tính là: ", result);
+          break;
+        default:
+          console.log("Phép tính hoặc số không hợp lệ!!!");
+      }
+    </script>
+  </body>
+</html>
